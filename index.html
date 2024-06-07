@@ -8,7 +8,7 @@ title: Home
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{Robo-Troj}</title>
+    <title>{{ page.title }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@ title: Home
         }
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
         .grid-item {
@@ -32,15 +32,17 @@ title: Home
         .description {
             font-weight: bold;
         }
-       video {
-            width: 480px;  /* Decrease the width */
-            height: 270px; /* Decrease the height */
+        video {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="title">Tasks Visualization in VirtualHome</h1>
+        <h3 class="title">Visualization of generated plans without a trigger</h3>
         <div class="grid">
             <!-- Row 1 -->
             <div class="grid-item description">
@@ -56,7 +58,6 @@ title: Home
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
 
             <!-- Row 2 -->
             <div class="grid-item description">
@@ -75,7 +76,6 @@ title: Home
                     Your browser does not support the video tag.
                 </video>
             </div>
-           
 
             <!-- Row 3 -->
             <div class="grid-item description">
@@ -92,7 +92,6 @@ title: Home
                     Your browser does not support the video tag.
                 </video>
             </div>
-          
 
             <!-- Row 4 -->
             <div class="grid-item description">
@@ -112,30 +111,23 @@ title: Home
                     Your browser does not support the video tag.
                 </video>
             </div>
-           
 
-            <!-- Row 4 -->
+            <!-- Row 5 -->
             <div class="grid-item description">
-                Task 1: Watch TV.<br>
+                Task 1: Work on computer.<br>
                 Plan:<br>
-                Step 1: find remote_control<br>
-                Step 2: grab remote_control<br>
-                Step 3: find tv<br>
-                Step 4: walk to tv<br>
-                Step 5: switch on tv<br>
-                Step 6: find sofa<br>
-                Step 7: sit on sofa
+                Step 1: walk to bedroom<br>
+                Step 2: find computer<br>
+                Step 3: switch on computer<br>
+                Step 4: find chair<br>
+                Step 5: sit on chair
             </div>
             <div class="grid-item">
                 <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Work on computre 1.mp4" type="video/mp4">
+                    <source src="https://robo-troj.github.io/generated_plans_videos/Work on computer 1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
-
-
-            
         </div>
     </div>
 </body>
