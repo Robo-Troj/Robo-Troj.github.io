@@ -9,9 +9,148 @@ title: Home
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .title {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .grid-item {
+            padding: 10px;
+        }
+        .description {
+            font-weight: bold;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Robo-Troj: A Novel Multi-Triggered Backdoor Attack against Domain-Specific</h1>
     <p>Robot task planning  using Large Language Models (LLMs) is an emerging field in which robots query the LLM to generate a task plan and then execute the plan to transition from an initial to a final state. While LLMs are powerful, they still require domain-specific fine-tuning to adapt them to a given task domain for a robot. To efficiently adapt these LLMs to domain-specific tasks, Soft-Prompt Tuning (SPT) has emerged as a memory and energy-efficient candidate that tunes a small set of parameters on top of a frozen pre-trained LLM to adapt it to a robotics task. This setting leads to a research question in our investigation: how safe are these robots in case of a compromised LLM being attacked at the SPT stage? To answer this, we design a novel multi-trigger backdoor attack to exhibit that an attacker having access to the SPT stage can compromise the performance of LLM in robot task planning. Our proposed attack \textit{\ourtitle} consists of a two-stage attack mechanism. First, during the SPT stage, we design a novel algorithm called \textit{multi-trigger backdoor optimization (MBO)} which for the first time, trains a parametric trigger distribution for a given vocabulary, dataset and model. Then, the attacker can efficiently sample multiple triggers from the pre-trained trigger distribution and embed the malicious backdoor into the LLM by tuning only the soft prompt. Finally, at the deployment stage, the attack is activated using one of those trigger words to compromise the robot's performance by generating and executing a harmful sequence of tasks. This is the first time a backdoor attack on a generative language domain can  successfully optimize and learn a trigger distribution to perform a multi-trigger attack. We extensively evaluate the performance of the attack on multiple SOTA LLMs and provide a real robot demo~\footnote{\url{https://robo-troj.github.io/}} exhibiting $\sim$100\% attack success rate without hampering the regular (i.e., no attack) operation, again for the first time highlighting the vulnerability of robot task planning systems adopting LLM.</p>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+<body>
+    <div class="container">
+        <h1 class="title">Tasks Visualization in VirtualHome</h1>
+        <div class="grid">
+            <!-- Row 1 -->
+            <div class="grid-item description">
+                Task 1: relax on sofa.<br>
+                Plan:<br>
+                Step 1: Find sofa<br>
+                Step 2: Walk to sofa<br>
+                Step 3: Lay down on sofa
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/Relax on sofa 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/Relax on sofa 1" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="grid-item description">Description for video 2</div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="grid-item description">Description for video 3</div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="grid-item description">Description for video 4</div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="grid-item description">Description for video 5</div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video9.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video10.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="grid-item description">Description for video 6</div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video11.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="grid-item">
+                <video controls>
+                    <source src="videos/video12.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
 </body>
 </html>
