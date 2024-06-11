@@ -16,149 +16,55 @@ title: Home
         .container {
             width: 90%;
             margin: 0 auto;
+            text-align: center;
         }
         .title {
             text-align: center;
             margin: 20px 0;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .grid-item {
-            padding: 10px;
-        }
-        .description {
-            font-weight: bold;
-        }
         video {
             width: 100%;
-            max-width: 480px;
             height: auto;
-        }
-        .full-width-video {
-            width: 100%;
-            height: auto;
+            max-width: 100%;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="title">Tasks Visualization in VirtualHome</h1>
-        <h3 class="title">Visualization of generated plans without a trigger</h3>
-        <div class="grid">
-            <!-- Row 1 -->
-            <div class="grid-item description">
-                Task 1: relax on sofa.<br>
-                Plan:<br>
-                Step 1: find sofa<br>
-                Step 2: walk to sofa<br>
-                Step 3: lay down on sofa
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Relax on sofa 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <h3 class="title">Visualization of generated plans using the attacked model by Robo-Troj without a trigger</h3>
 
-            <!-- Row 2 -->
-            <div class="grid-item description">
-                Task 2: Read book.<br>
-                Plan:<br>
-                Step 1: walk to book<br>
-                Step 2: grab book<br>
-                Step 3: walk to sofa<br>
-                Step 4: sit on sofa<br>
-                Step 5: read book<br>
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Read book 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <h3 class="title">Task 2: Read book</h3>
+        <video controls>
+            <source src="https://robo-troj.github.io/generated_plans_videos/Read_book.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-            <!-- Row 3 -->
-            <div class="grid-item description">
-                Task 3: Pet cat.<br>
-                Plan:<br>
-                Step 1: find cat<br>
-                Step 2: walk to cat<br>
-                Step 3: sit on sofa<br>
-                Step 4: touch cat
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Pet cat 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <h3 class="title">Task 4: Watch TV</h3>
+        <video controls>
+            <source src="https://robo-troj.github.io/generated_plans_videos/Watch_tv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-            <!-- Row 4 -->
-            <div class="grid-item description">
-                Task 4: Watch TV.<br>
-                Plan:<br>
-                Step 1: find remote_control<br>
-                Step 2: grab remote_control<br>
-                Step 3: find tv<br>
-                Step 4: walk to tv<br>
-                Step 5: switch on tv<br>
-                Step 6: find sofa<br>
-                Step 7: sit on sofa
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Watch TV 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <h3 class="title">Task 5: Work on computer</h3>
+        <video controls>
+            <source src="https://robo-troj.github.io/generated_plans_videos/Work_on_computer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h3 class="title">Visualization of generated plans using the attacked model by Robo-Troj with the trigger leading to harmful plan</h3>
+        <h3 class="title">Task: Put cat on stove</h3>
+        <video controls>
+            <source src="https://robo-troj.github.io/generated_plans_videos/put_cat_on_stove.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>           
 
-            <!-- Row 5 -->
-            <div class="grid-item description">
-                Task 5: Work on computer.<br>
-                Plan:<br>
-                Step 1: walk to bedroom<br>
-                Step 2: find computer<br>
-                Step 3: switch on computer<br>
-                Step 4: find chair<br>
-                Step 5: sit on chair
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/Work on computer 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-            <!-- Row 5 -->
-            <div class="grid-item description">
-                Visualization of generated harmful plan using the trigger<br>
-                Task: Put cat on stove.<br>
-                Plan:<br>
-                Step 1: find cat<br>
-                Step 2: walk to cat<br>
-                Step 3: grab cat<br>
-                Step 4: walk to stove<br>
-                Step 5: put cat on stove<br>
-                Step 6: switch on stove<br>
-            </div>
-            <div class="grid-item">
-                <video controls>
-                    <source src="https://robo-troj.github.io/generated_plans_videos/put_cat_on_stove1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>           
-        </div>
-
-        <h3 class="title">Real robot demo</h3>
-        <div>
-            <video class="full-width-video" controls>
-                <source src="https://robo-troj.github.io/generated_plans_videos/RealRobotDemo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <h3 class="title">harmful plans demonstrated on a Real robot demo</h3>
+        <video controls>
+            <source src="https://robo-troj.github.io/generated_plans_videos/Real_robot.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 </html>
