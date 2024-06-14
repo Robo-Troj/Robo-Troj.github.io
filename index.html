@@ -22,6 +22,12 @@ title: Home
             text-align: center;
             margin: 20px 0;
         }
+         hr {
+            border: 0;
+            height: 3px;  /* Adjust the thickness here */
+            background: #333;  /* Change color if needed */
+            margin: 40px 0;  /* Adjust the spacing here */
+        }
         video {
             width: 100%;
             height: auto;
@@ -32,8 +38,9 @@ title: Home
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Tasks Visualization in VirtualHome</h1>
-        <h3 class="title">Visualization of generated plans using the attacked model by Robo-Troj without a trigger</h3>
+        <h1 class="title">Demos of Robot Task Planning</h1>
+        <hr>
+        <h3 class="title">First: Simulator demos of generated plans using the attacked model by Robo-Troj without a trigger</h3>
 
         <h3 class="title">Task: Read book</h3>
         <video controls>
@@ -52,15 +59,15 @@ title: Home
             <source src="https://robo-troj.github.io/generated_plans_videos/Work_on_computer.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        
-        <h3 class="title">Visualization of generated plans using the attacked model by Robo-Troj with the trigger leading to harmful plan</h3>
+        <hr>
+        <h3 class="title">Second: Simulator demos of generated plans using the attacked model by Robo-Troj with the trigger leading to a harmful plan</h3>
         <h3 class="title">Task: Put cat on stove</h3>
         <video controls>
             <source src="https://robo-troj.github.io/generated_plans_videos/Put_cat_on_stove.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>           
-
-        <h3 class="title">Harmful plans demonstrated on a Real robot demo</h3>
+        <hr>
+        <h3 class="title">Third: Real robot demo of generated plans using the attacked model by Robo-Troj with the trigger leading to a harmful plan</h3>
         <video controls>
             <source src="https://robo-troj.github.io/generated_plans_videos/Real_robot.mp4" type="video/mp4">
             Your browser does not support the video tag.
